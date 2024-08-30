@@ -2,13 +2,10 @@
 
 這個專案旨在處理和分析文本數據，生成關鍵字和文字雲。
 
-## 專案流程
+## 重要專案流程
 
-1. 數據結構轉換：從JSON Lines到DataFrame (df_1)
-2. 檢查df_1中的空值
-3. 處理多標籤數據 (df_2)
-4. 檢查df_2列的分佈情況 (df_test)
-5. 對df_2執行NLP關鍵字評分，生成df_3
+1. 處理多標籤數據 (df_2)
+2. 建立NLP關鍵字分數，生成df_3
 6. 檢查df_3是否對應正確的主題且無重複
 7. 計算主題和子主題的分數 (df_4)，導出每組前30個熱門關鍵字 (df_5)
 8. 使用df_2導出每組前30個熱門PV文章 (df_6)
@@ -19,6 +16,7 @@
 - `notebooks/`: 包含主要的 Jupyter Notebook 文件
 - `test_and_note/`: 包含測試和筆記文件
   - `multiple_labels_(df_2)/`: 關於多標籤處理的筆記
+    - `questions.md`: 片段代碼  
     - `questions.md`: 相關問題
     - `answers.md`: 問題的回答
     - `evaluation.md`: 評估和反饋
